@@ -31,7 +31,8 @@ A dos executable (which will work on windows) and a MacOS binary (built on High 
       \a	Alert (Beep, Bell)
       \b	Backspace
       \f	Form Feed
-      \n	New Line (Line Feed);  \r	Carriage Return
+      \n	New Line (Line Feed);  
+      \r	Carriage Return
       \t	Horizontal Tab
       \v	Vertical Tab
       \\	Backslash

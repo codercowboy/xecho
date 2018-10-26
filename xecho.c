@@ -20,7 +20,6 @@ UPDATES:
 
 2018/10/25
  - Added support for non-standard escape codes
- - Added example usage
 
 2018/10/??
  - Initial version
@@ -211,7 +210,7 @@ void printUsage() {
     printf("  \\a\tAlert (Beep, Bell)\n");
     printf("  \\b\tBackspace\n");
     printf("  \\f\tForm Feed\n");
-    printf("  \\n\tNew Line (Line Feed);");
+    printf("  \\n\tNew Line (Line Feed);\n");
     printf("  \\r\tCarriage Return\n");
     printf("  \\t\tHorizontal Tab\n");
     printf("  \\v\tVertical Tab\n");
