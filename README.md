@@ -96,12 +96,19 @@ A dos executable (which will work on windows) and a MacOS binary (built on High 
 
  * [More info on C escape codes](https://en.wikipedia.org/wiki/Escape_sequences_in_C)
  * [More info on XML escape codes](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
- * [DOS escape codes] - Example: "^>" translates to ">". NOTE: FreeDOS does not currently support these. 
+ * [DOS escape codes](https://ss64.com/nt/syntax-esc.html) - Example: "^>" translates to ">". NOTE: FreeDOS does not currently support these. 
+ * [DOS echo command reference](https://ss64.com/nt/echo.html)
+ * [FreeDOS echo command reference](http://www.skyfree.org/jpn/brainstorm/freecom/cmd.html#echo)
+ * [DOS type command reference](https://ss64.com/nt/type.html) - Echoes contents of a file to standard out.
+ * [Bash escape codes](https://ss64.com/bash/syntax-quoting.html) [more](https://www.tldp.org/LDP/abs/html/special-chars.html)
+ * [Bash echo command reference](https://ss64.com/bash/echo.html) 
+ * [Linux / Bash cat command reference](https://ss64.com/bash/cat.html) - Echoes contents of a file to standard out.
  * [FreeDOS](http://www.freedos.org/) - Open-source, Free MS-DOS replacement.
  * [DOSBox](https://www.dosbox.com/) - Cross-platform DOS emulator for modern hardware.
  * [Em-DOSBox](https://github.com/dreamlayers/em-dosbox) - DosBox in javascript for running in browser.
  * [v86](https://github.com/copy/v86) - Javascript [x86](https://en.wikipedia.org/wiki/X86) vintage PC emulator, allows running various VMs in browser. [demo with win95, linux FreeDOS](https://copy.sh/v86/)
- * [VirtualBox](https://www.virtualbox.org/) - Cross-platform [x86](https://en.wikipedia.org/wiki/X86) virtual machine host.
+ * [VirtualBox](https://www.virtualbox.org/) - Cross-platform [x86](https://en.wikipedia.org/wiki/X86) [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine) host.
+ * [QEMU](https://www.qemu.org/) - Another cross-platform x86 virtual machine host.
 
 # Building
 
@@ -126,6 +133,10 @@ If you'd like to contribute to the project, great! Fork and PR, or download and 
 
 Ideas to improve the project:
 
+ * Add example usage to readme and the tool
+ * Support for hex, octal, decimal, unicode conversion to characters / bytes
+ * Support for emojis ([Emoji hex codes](https://apps.timwhitlock.info/emoji/tables/unicode)).
+ * Support for [html entities](https://www.freeformatter.com/html-entities.html) conversion.
  * Unit tests
  * Build scripts to build the project (make files, whatever)
  * Build scripts to build cross-platform binaries on one machine (ie build for DOS on MacOS).
