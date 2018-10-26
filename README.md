@@ -1,6 +1,6 @@
 # xecho
 
-Echo command with support for escaped C characters and escaped XML sequences.
+Echo command with support for escaped C characters, escaped XML sequences, and more.
 
 xecho is a simple command line program intended to be a replacement for the echo command when necessary. In particular, on [FreeDOS]() (and various old versions of MS-DOS) it's impossible to use the echo command without a new line being echoed, and a ">" character cannot be echoed either. With xecho, both of these problems are solved.
 
@@ -15,37 +15,81 @@ A dos executable (which will work on windows) and a MacOS binary (built on High 
  - Dos / Windows Executable: [xecho.exe](bin/xecho.exe)
  - MacOS Binary [xecho](bin/xecho)
 
+# Example usage    
+
     Usage: xecho [options] [string]
-    
+
     Options:
-      -x	suppress XML character replacement
-      -c	suppress C character replacement
-      -n	supress printing new line after output
+    
+      -sx	suppress XML character replacement
+      -sc	suppress C character replacement
+      -sn	suppress non-standard character replacement
+      -n	supress printing new line after output (like bash)
     
     Supported C Character Replacements:
     
       \a	Alert (Beep, Bell)
       \b	Backspace
-      \f	Formfeed
-      \n	Newline (Line Feed); see notes below
-      \r	Carriage Return
-      		Horizontal Tab
+      \f	Form Feed
+      \n	New Line (Line Feed);  \r	Carriage Return
+      \t	Horizontal Tab
       \v	Vertical Tab
       \\	Backslash
-      \'	Single quotation mark
-      \"	Double quotation mark
-      \?	Question mark
-      
-    
+      \'	Single Quotation Mark
+      \"	Double Quotation Mark
+      \?	Question Mark
+
     Supported XML Character Replacements:
     
-      &amp;	&  Ampersand
-      &lt;	<  Less-than
-      &gt;	>  Greater-than
-      &quot;	"  Double quotation mark
-      &apos;	'  Single quotation mark
-
-# Example usage    
+      &amp;		&	Ampersand
+      &lt;		<	Less-than
+      &gt;		>	Greater-than
+      &quot;	"	Double Quotation Mark
+      &apos;	'	Single Quotation Mark
+    
+    Supported Non-Standard Character Replacements:
+    
+      :a: 		*	Asterisk
+      :b: 		\b	Backspace
+      :c: 		,	Comma
+      :d: 		.	Dot (Period)
+      :h: 		#	Hash
+      :q: 		?	Question Mark
+      :f: 		\f	Form Feed
+      :n: 		\n	New Line
+      :p: 		|	Pipe (Vertical bar)
+      :r: 		\r	Carriage Return
+      :s: 		 	Space
+      :t: 		\t	Horizontal Tab
+      :v: 		\v	Vertical Tab
+    
+      :fslash: 	/	Forward Slash
+      :bslash: 	\	Back Slash
+      :oparen: 	(	Open Parentheses
+      :cparen: 	)	Close Parentheses
+      :obrack: 	[	Open Bracket
+      :cbrack: 	]	Close Bracket
+      :ocbrack: 	{	Open Curly Bracket
+      :ccbrack: 	}	Close Curly Braket
+      :lt: 		<	Less-than
+      :gt: 		>	Greater-than
+    
+      :amp: 	&	Ampersand
+      :apos: 	'	Single Quotation Mark
+      :at: 		@	At
+      :bcktck: 	`	Back Tick
+      :carret: 	^	Carret
+      :col: 	:	Colon
+      :dash: 	-	Dash (Hyphen)
+      :dollar: 	$	Dollar
+      :eq: 		=	Equals
+      :exclam: 	!	Exclamation Mark
+      :pct: 	%	Percent
+      :plus: 	+	Plus
+      :quot: 	"	Double Quotation Mark
+      :scol: 	;	Semicolon
+      :tilde: 	~	Tilde
+      :udash: 	_	Underscore
 
 # Additional Resources      
 
